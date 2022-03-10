@@ -1,11 +1,11 @@
 # Table_API - Call : JS / CSS / HTML
 
-## Table with - Search, Sort, Pagination, Drag-Drop functionality / _"JavaScript Task 14"._
+## Table with - Search, Sort, Pagination, Drag-Drop functionality /
 
 Consider the following example code:
 
 ```JavaScript
-//----- Handle Drag Events Start -----///
+//----- Drag Events Start -----///
 function handleDragStart(evn) {
   evn.target.classList.add("dragging");
   console.log("drag starts", evn.target);
@@ -36,7 +36,7 @@ function handleDragOver() {
 
   itemDroppedOverIndex = pageStartIndex + Number(this.getAttribute("data-index"));
 }
-//----- Handle Drag Events End -----///
+//----- Drag Events End -----///
 ```
 
 ---
