@@ -108,7 +108,7 @@ function handleDragOver() {
 
   itemDroppedOverIndex = pageStartIndex + Number(this.getAttribute("data-index"));
 }
-//----- Handle Drag Events End -----///
+//----- Handle Drag Events End -----//
 
 async function handleFetchCountry() {
   let countryCode = prompt("Please enter valid country code", "am");
