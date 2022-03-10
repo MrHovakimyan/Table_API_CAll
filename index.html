@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Get Date</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="covid-content">
+          <h1 class="table-title">Information about COVID-19</h1>
+          <div class="serach">
+            <input type="text" placeholder="Search ..." class="inputSearch" />
+          </div>
+          <table class="covidTable" border="2">
+            <thead class="thead">
+              <th>Country Code <button id="countryCode">Sort</button></th>
+              <th>Country Name <button id="countryName">Sort</button></th>
+              <th>Population <button id="population">Sort</button></th>
+              <th>Latest Data</th>
+              <th>Updated at <button id="updatedAt">Sort</button></th>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <!--Pages Nav-button-->
+        <nav class="page-nav hidden">
+          <button class="changePage-list_item">Previous</button>
+          <ul class="page-list"></ul>
+          <button class="changePage-list_item">Next</button>
+        </nav>
+
+        <div class="btn-wrapper">
+          <button class="fetch">Get Data</button>
+          <button class="fetchAll">Get All Data</button>
+        </div>
+        <!--Submit Form-->
+        <h2 class="formTitle">Enter your own country data</h2>
+        <form action="submit" class="submit">
+          <div class="countryInfo">
+            <input
+              type="text"
+              placeholder="Country code*"
+              class="cCode"
+              id="inputCountryCode"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Country Name*"
+              class="cName"
+              id="inputCountryName"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Population*"
+              class="cpopulation"
+              id="inputCountryPopulation"
+              required
+            />
+          </div>
+
+          <div class="countryInfo">
+            <input
+              type="text"
+              placeholder="Deaths*"
+              class="inputLatestData"
+              id="inputDeaths"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Confirmed*"
+              class="inputLatestData"
+              id="inputConfirmed"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Recovered*"
+              class="inputLatestData"
+              id="inputRecovered"
+              required
+            />
+          </div>
+
+          <input
+            type="text"
+            placeholder="Updated At*"
+            class="inputUpdatedAt"
+            id="inputUpdatedAt"
+            required
+          />
+          <!-- <input type="submit" value="Submit"> -->
+
+          <button id="formBtn">Submit Data</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="./assets/JS/app.js" type="module"></script>
+  </body>
+</html>
